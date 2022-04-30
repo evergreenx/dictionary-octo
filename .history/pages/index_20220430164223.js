@@ -30,7 +30,7 @@ const Home = ({ res }) => {
   useEffect(() => {
     axios
 
-      .get("https://api.dictionaryapi.dev/api/v2/entries/en/evergreen")
+      .get("https://api.dictionaryapi.dev/api/v2/entries/en/hello")
 
       .then((res) => {
         console.log(res.data);
@@ -41,9 +41,7 @@ const Home = ({ res }) => {
 
   console.log(intialWord, "testting");
 
-  // function to play sound on click
-
-
+  // function to play sound
 
   return (
     <div>

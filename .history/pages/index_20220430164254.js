@@ -30,7 +30,7 @@ const Home = ({ res }) => {
   useEffect(() => {
     axios
 
-      .get("https://api.dictionaryapi.dev/api/v2/entries/en/evergreen")
+      .get("https://api.dictionaryapi.dev/api/v2/entries/en/hello")
 
       .then((res) => {
         console.log(res.data);

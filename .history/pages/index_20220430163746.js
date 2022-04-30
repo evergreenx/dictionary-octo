@@ -11,12 +11,7 @@ import RandomWord from "../components/RandomWord";
 const Home = ({ res }) => {
   const [randomWord, setRandomWord] = useState("");
   const [intialWord, setIntialWord] = useState("");
-
   console.log(res);
-
-
-
-
 
   useEffect(() => {
     axios
@@ -41,10 +36,6 @@ const Home = ({ res }) => {
 
   console.log(intialWord, "testting");
 
-  // function to play sound on click
-
-
-
   return (
     <div>
       <Head>
@@ -61,7 +52,7 @@ const Home = ({ res }) => {
 
           <div className="flex items-center bg-gray-100 shadow-lg rounded-full py-3 px-3">
             <input
-              className="input--text bg-gray-100 font-bold outline-none py-2"
+              className="input--text bg-gray-200 font-bold outline-none py-2"
               type="text"
               placeholder="Type something"
             />

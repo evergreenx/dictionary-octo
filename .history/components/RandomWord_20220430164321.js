@@ -4,9 +4,9 @@ import { FcSpeaker } from "react-icons/fc";
 const RandomWord = ({ data }) => {
   const { word, phonetics, meanings } = data;
 
-  const playSound = (url) => {
+  const playSound = () => {
     const audio = new Audio(
-      "https://api.dictionaryapi.dev/media/pronunciations/en/evergreen-uk.mp3"
+      "https://raw.githubusercontent.com/dwyl/english-words/master/words/sounds/hello.mp3"
     );
     audio.play();
   };

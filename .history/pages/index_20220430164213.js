@@ -17,7 +17,7 @@ const Home = ({ res }) => {
 
 
 
-
+  
   useEffect(() => {
     axios
       .get("https://random-word-api.herokuapp.com/word?number=1")
@@ -30,7 +30,7 @@ const Home = ({ res }) => {
   useEffect(() => {
     axios
 
-      .get("https://api.dictionaryapi.dev/api/v2/entries/en/evergreen")
+      .get("https://api.dictionaryapi.dev/api/v2/entries/en/hello")
 
       .then((res) => {
         console.log(res.data);
@@ -40,10 +40,6 @@ const Home = ({ res }) => {
   }, []);
 
   console.log(intialWord, "testting");
-
-  // function to play sound on click
-
-
 
   return (
     <div>

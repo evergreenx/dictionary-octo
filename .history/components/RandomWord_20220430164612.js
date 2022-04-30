@@ -6,7 +6,7 @@ const RandomWord = ({ data }) => {
 
   const playSound = (url) => {
     const audio = new Audio(
-      "https://api.dictionaryapi.dev/media/pronunciations/en/evergreen-uk.mp3"
+      "https://api.dictionaryapi.dev/media/pronunciations/hello-au.mp3"
     );
     audio.play();
   };

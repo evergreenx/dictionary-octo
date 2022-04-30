@@ -11,12 +11,7 @@ import RandomWord from "../components/RandomWord";
 const Home = ({ res }) => {
   const [randomWord, setRandomWord] = useState("");
   const [intialWord, setIntialWord] = useState("");
-
   console.log(res);
-
-
-
-
 
   useEffect(() => {
     axios
@@ -30,7 +25,7 @@ const Home = ({ res }) => {
   useEffect(() => {
     axios
 
-      .get("https://api.dictionaryapi.dev/api/v2/entries/en/evergreen")
+      .get("https://api.dictionaryapi.dev/api/v2/entries/en/hello")
 
       .then((res) => {
         console.log(res.data);
@@ -40,10 +35,6 @@ const Home = ({ res }) => {
   }, []);
 
   console.log(intialWord, "testting");
-
-  // function to play sound on click
-
-
 
   return (
     <div>

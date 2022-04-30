@@ -3,19 +3,12 @@ import { FcSpeaker } from "react-icons/fc";
 
 const RandomWord = ({ data }) => {
   const { word, phonetics, meanings } = data;
-
-  const playSound = (url) => {
-    const audio = new Audio(
-      "https://api.dictionaryapi.dev/media/pronunciations/en/evergreen-uk.mp3"
-    );
-    audio.play();
-  };
   return (
     <div className="bg-white rounded-2xl shadow-2xl p-7 w-72 container h-auto mx-auto">
       <div className="flex justify-between items-center">
         <h2 className="font-bold text-2xl">{word}</h2>
 
-        <FcSpeaker className="text-2xl cursor-pointer" onClick={playSound} />
+        <FcSpeaker className="text-2xl" />
       </div>
 
       <p className="text-gray-400 pt-5 pb-2">
@@ -41,7 +34,7 @@ const RandomWord = ({ data }) => {
           return (
             text.definitions[0] && (
               <span className="mr-4 tracking-tight" key={index}>
-                {text.definitions[0].definition}
+                {text.definitions.definition}
               </span>
             )
           );
